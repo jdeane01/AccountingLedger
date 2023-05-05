@@ -6,7 +6,15 @@ Project Overview: Accounting ledger with multiple screens.
 ![img_1.png](img_1.png) Screen two
 ![img_2.png](img_2.png) Screen three
 
+Features multiple screens each with additional options to select from. 
+
+Transactions.csv file stream
+
+Loops
+
 An Interesting code in this project is the screen options loops exampled in image. ![img_3.png](img_3.png)
+
+One challenge I ran into is setting up my transactions.csv. I was reluctant to ask for help with the project as I wanted to test my abilities.
 
 I originally started the project and realized early that I needed to restart. After restarting my project I focused on a skeleton based approach.
 Commenting out and planning what I want to do and then filling in as I went along. The delay limited my progress but overall the project was a great learning experience.
