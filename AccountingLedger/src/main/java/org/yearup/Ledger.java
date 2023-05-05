@@ -32,6 +32,8 @@ public class Ledger
 
     private void displayLedgerScreen() {
         // Calculator and ledger functions
+
+        // Transactions
     }
 
     private void displayPaymentScreen() {
