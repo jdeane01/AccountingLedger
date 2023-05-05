@@ -16,3 +16,5 @@ I learned a faster way to set up Constructors, Getters/Setters, utilizing the Ge
 Having went into the project unsure on what an Accounting Ledger is and restarting completely, I'm satisfied with the formatting of my code and the progress I've made so far.
 This was a solo project and as a complete beginner there were times I doubted myself. I knew I wouldn't be able to 100% complete the project but my goal was to attempt to and to make sure what I do have is correct.
 I look forward to future capstone projects solo/group to demonstrate more growth.
+
+:)
