@@ -90,7 +90,55 @@ public class Ledger
 
     private void displayDepositScreen() {
         // Get Deposit information and save to CSV
+        System.out.print("Enter the payment amount:");
+        Float amount = input.nextFloat();
+        input.nextLine();
+        System.out.print("Enter the description:");
+        String description = input.nextLine();
+        System.out.print("Enter vendor name:");
+        String vendor = input.nextLine();
 
+
+        FileInputStream fileStream;
+        Scanner fileScanner = null;
+
+        FileWriter fileWriter = null;
+        LocalDate date = LocalDate.now();
+
+        try
+        {
+            // 1 open file - for reading
+            fileStream = new FileInputStream("transactions.csv");
+            fileScanner = new Scanner(fileStream);
+            // open file for WRITING
+            fileWriter = new FileWriter("transactions.csv");
+
+            // skip first line (header row)
+            fileScanner.nextLine();
+        }
+        catch(IOException e)
+        {
+            System.out.println("There was a problem with opening/closing the file.");
+            System.out.println(e.getMessage());
+        }
+        catch(Exception e)
+        {
+            System.out.println("A general error has occurred:");
+            System.out.println(e.getMessage());
+        }
+        finally
+        {
+            // clean up code
+            if(fileScanner != null)
+            {
+                // 3 close the stream
+                fileScanner.close();
+                try
+                {
+                    fileWriter.close();
+                }catch (Exception ex){}
+            }
+        }
     }
 
     private String displayHomeScreen() {
